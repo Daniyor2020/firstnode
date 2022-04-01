@@ -23,3 +23,6 @@ const server = http.createServer((req, res) => {
 server.listen(8888, () => {
   console.log("server is running on port 8888");
 });
+const items= [1,[3,[4,5]],[8],9,7];
+const newItems= _.flattenDeep(items)
+console.log(newItems)
